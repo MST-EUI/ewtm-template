@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+  <script src="//web.ewt360.com/common/react/dev/16.9.0/react-development.js"></script>
+  <script src="//web.ewt360.com/common/react/dev/16.9.0/react-dom.development.js"></script>
+  <script src="//web.ewt360.com/common/antd-mobile/dev/2.3.1/antd-mobile.js"></script>
+  <script>
+    // 解决奇怪的 module.exports = antd-mobile; 报错问题
+    window.AntdMobile = window['antd-mobile'];
+  </script>
+  <link href="//web.ewt360.com/common/antd-mobile/dev/2.3.1/antd-mobile.css" rel="stylesheet">
   <link rel="stylesheet" href="./node_modules/@ewtm/ewtm-css/dist/blue.whale.css" />
-  <link rel="stylesheet" href="./node_modules/@ewtd/ewt-demo/dist/index.css" />
-  <link rel="stylesheet" href="./node_modules/@ewtd/ewt-code/dist/index.css" />
+  <link rel="stylesheet" href="./node_modules/@ewtm/ewtm-demo/dist/index.css" />
+  <link rel="stylesheet" href="./node_modules/@ewtm/ewtm-code/dist/index.css" />
   <title>ewtm-template</title>
 </head>
 <body style="background-color: #fff;">

@@ -1,6 +1,6 @@
 {
   "name": "ewtm-template",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "description": "ewtm component template",
   "main": "dist/index.js",
   "scripts": {
@@ -41,10 +41,12 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
-    "@ewtd/ewt-code": "^1.0.0",
-    "@ewtd/ewt-demo": "^1.0.0",
+    "@ewtm/ewtm-code": "^0.1.0",
     "@ewtm/ewtm-css": "^1.0.0",
+    "@ewtm/ewtm-demo": "^0.1.1",
+    "@ewtm/ewtm-icon": "^0.1.4",
     "babel-eslint": "^7.2.3",
+    "classnames": "^2.2.6",
     "commitlint": "^7.2.1",
     "console-polyfill": "^0.3.0",
     "conventional-changelog-cli": "^2.0.1",
@@ -61,13 +63,15 @@
     "event-source-polyfill": "^1.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
-    "react": "^16.9.0",
-    "react-addons-test-utils": "^0.14.8",
-    "react-dom": "^16.9.0"
+    "prop-types": "^15.6.2",
+    "react-addons-test-utils": "^0.14.8"
   },
-  "dependencies": {
+  "peerDependencies": {
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "@ewtm/ewtm-icon": "^0.1.4",
+    "@ewtm/ewtm-code": "^0.1.0",
+    "@ewtm/ewtm-demo": "^0.1.1"
   },
   "config": {
     "commitizen": {
