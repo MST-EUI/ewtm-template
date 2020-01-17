@@ -31,7 +31,6 @@ import { EmptyData } from '@ewtm/ewtm';
 
 <EmptyData type="large" />
 `;
-
     return (
       <Demo>
         <h2>EmptyData 组件</h2>
