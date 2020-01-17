@@ -19,17 +19,17 @@ class DemoComponent extends React.Component {
     const codeSmall = `
 import { EmptyData } from '@ewtm/ewtm';
 
-<EmptyData style={{ width: '200px' }} type="small" />
+<EmptyData type="small" />
 `;
     const codeMedium = `
 import { EmptyData } from '@ewtm/ewtm';
 
-<EmptyData style={{ width: '200px' }} type="medium" />
+<EmptyData type="medium" />
 `;
     const codeLarge = `
 import { EmptyData } from '@ewtm/ewtm';
 
-<EmptyData style={{ width: '200px' }} type="large" />
+<EmptyData type="large" />
 `;
 
     return (
@@ -38,13 +38,13 @@ import { EmptyData } from '@ewtm/ewtm';
         <p>空数据组件，数据为空时使用。</p>
         <h3>代码演示</h3>
         <Code sourceCode={codeSmall} buttonText="小尺寸">
-          <EmptyData style={{ width: '200px' }} type="small" />
+          <EmptyData type="small" />
         </Code>
         <Code sourceCode={codeMedium} buttonText="默认尺寸(中)">
-          <EmptyData style={{ width: '200px' }} />
+          <EmptyData />
         </Code>
         <Code sourceCode={codeLarge} buttonText="大尺寸">
-          <EmptyData style={{ width: '200px' }} type="large" />
+          <EmptyData type="large" />
         </Code>
         <h3>API</h3>
         <div className="table-box">

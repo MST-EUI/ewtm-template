@@ -8,12 +8,9 @@
     "dev": "ewtm server",
     "build": "ewtm build",
     "test": "ewtm test",
-    "commit": "npx git-cz",
     "coverage": "ewtm test --coverage",
     "lint": "eslint --fix src/*",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "precommit": "lint-staged",
-    "commitmsg": "commitlint -E GIT_PARAMS",
     "version": "npm run changelog && git add CHANGELOG.md",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm run build"
@@ -46,7 +43,6 @@
     "@ewtm/ewtm-demo": "^0.1.1",
     "@ewtm/ewtm-icon": "^0.1.4",
     "babel-eslint": "^7.2.3",
-    "classnames": "^2.2.6",
     "commitlint": "^7.2.1",
     "console-polyfill": "^0.3.0",
     "conventional-changelog-cli": "^2.0.1",
@@ -63,7 +59,6 @@
     "event-source-polyfill": "^1.0.3",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
-    "prop-types": "^15.6.2",
     "react-addons-test-utils": "^0.14.8"
   },
   "peerDependencies": {
@@ -79,19 +74,14 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,jsx}": [
       "eslint --fix",
-      "git add ."
+      "git add"
     ]
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "subject-case": [
-        0
-      ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   }
 }
