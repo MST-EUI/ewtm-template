@@ -18,5 +18,5 @@ import { EmptyData } from '@ewtm/ewtm';
 
 ## API
 
-[文档地址 eui.mistong.com/#/ewtm/getstarted](http://eui.mistong.com/#/ewtm/getstarted)
+[文档地址 eui.mistong.com/mobile](http://eui.mistong.com/mobile)
 
