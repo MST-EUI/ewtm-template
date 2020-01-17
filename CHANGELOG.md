@@ -1,3 +1,8 @@
+<a name="0.1.4"></a>
+## [0.1.4](http://git.mistong.com/ewtm/ewtm-template/compare/v0.1.3...v0.1.4) (2020-01-17)
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](http://git.mistong.com/ewtm/ewtm-template/compare/v0.1.2...v0.1.3) (2020-01-17)
 
