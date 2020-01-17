@@ -69,11 +69,6 @@
     "@ewtm/ewtm-code": "^0.1.0",
     "@ewtm/ewtm-demo": "^0.1.1"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
